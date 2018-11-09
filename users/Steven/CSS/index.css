@@ -1,0 +1,126 @@
+/* FONTS */
+@font-face {
+    font-family: 'rocketToMars';
+    src:url('../misc/ROCKET TO MARS.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'future';
+    src:url('../misc/FUTRFW.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'smallType';
+    src:url('../misc/SmallTypeWriting.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    align-items: center;
+}
+
+#pagelinks {
+    background-color: #444444;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#pagelinks nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 100px;
+}
+#pagelinks nav li button {
+    background-color: inherit;
+    letter-spacing: 2px;
+    font-size: 14;
+    text-align: center;
+    border: none;
+    padding: 25px 20px;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#pagelinks nav li button:hover {
+    background-color: #595959;
+}
+
+#wallpaper {
+    background-image: url('../Images/Night2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+
+}
+#wallpaper1 {
+    background-image: url('../Images/Backgr.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 50%;
+
+}
+
+#logo {
+    text-align: center;
+    padding-top:450px;
+    padding-bottom:450px;
+}
+
+#logo span{
+    background-color: #444444;
+    font-family: 'future';
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#logo1 {
+    text-align: center;
+    padding-top:350px;
+    padding-bottom:450px;
+}
+#logo1 span {
+    background-color: #444444;
+    font-family: 'future';
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+.sText {
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px #919090;
+}
+
+footer {
+    width: 100%;
+    background-color: grey;
+    padding: 20px 0px;
+    text-align: center;
+    margin: auto;
+
+}
+
+footer img {
+    /*height: 24px*/
+    width: 24px;
+    padding-right: 10px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
