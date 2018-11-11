@@ -2,81 +2,72 @@
     <head>
         <title> Steven Cederrand </title>
         <link href="CSS/index.css" rel="stylesheet" type ="text/css"> </link>
+        <script type= "text/javascript" src="Scripts/Loader.js"></script>
     </head>
 
     <body>
-            <!-- Content navigator -->
-            <header>
-
-
-            </header>
-
-            <div id="pagelinks">
-                <nav>
-                    <li><a href="http://www.aschtech.se/"><button type="button">Aschtech</button></a></li>
-                    <li><a href="#wallpaper"><button type="button">home</button></a></li>
-                    <li><a href="#about"><button type="button">who am I</button></a></li>
-                    <li><a href="#howIwork"><button type="button">how I work</button></a></li>
-                    <li><a href="#portfolio"><button>portfolio</button></a></li>
-                    <li><a href="#photos"><button>photos</button></a></li>
-                </nav>
-            </div>
-            <!-- Home Screen -->
-            <div id="wallpaper">
+        <div href="#wallpaper"></div>
+        <div id="pagelinks">
+            <nav>
+                <li><a href="http://www.aschtech.se/"><button type="button">Aschtech</button></a></li>
+                <li id="wp"><a href="#wallpaper"><button type="button">home</button></a></li>
+                <li><a href="#about"><button type="button">who am I</button></a></li>
+                <li><a href="#howIwork"><button type="button">how I work</button></a></li>
+                <!-- <li><a href="#portfolio"><button>portfolio</button></a></li> -->
+                <li><a href="#photos"><button>photos</button></a></li>
+            </nav>
+        </div>
+        <!-- Home Screen -->
+        <div id="wallpaper">
+            <div id="containerForWP">
                 <div id="logo">
                     <span>Steven Cederrand</span>
                 </div>
             </div>
+        </div>
 
-            <!-- About me -->
-            <div id="about" class="sText">
-                <h1>who am I</h1>
-                <p>THis is some </p>
-            </div>
+        <!-- About me -->
+        <div id="about" class="sText">
+            <h1>who am I</h1>
+            <p id="aboutP1">THis is some </p>
+        </div>
 
-            <!-- Insert som image here -->
+        <!-- Insert som image here -->
 
-            <div id="wallpaper1">
+        <div id="wallpaper1">
+            <div id="containerForWP">
                 <div id="logo1">
                     <span>how I work</span>
                 </div>
             </div>
+        </div>
 
-            <!-- How I work -->
+        <!-- How I work -->
 
-            <div id="howIwork" class="sText">
-                <h1>how I work</h1>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-            </div>
+        <div id="howIwork" class="sText">
+            <h1>how I work</h1>
+            <p id="howP1">THis is some </p>
+        </div>
 
-            <!-- Insert som image here-->
+        <!-- Insert som image here-->
 
-            <div id="portfolio" class="sText">
-                <h1>portfolio</h1>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-            </div>
+        <div id="portfolio" class="sText">
+            <h1>portfolio</h1>
+            <p id="PP1">THis is some </p>
+        </div>
 
-            <!-- Insert som image here-->
-
-            <div id="photos"class="sText">
-                <h1>photos</h1>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-                <p>THis is some </p>
-            </div>
+        <!-- Insert som image here-->
+        <!--
+        <div id="photos"class="sText">
+            <h1>photos</h1>
+            <p>THis is some </p>
+            <p>THis is some </p>
+            <p>THis is some </p>
+        </div>
+        -->
+        <script>loadSpecific('aboutP1');</script>
+        <script>loadSpecific('howP1');</script>
+        <script>loadSpecific('PP1');</script>
 
         <!-- Contact -->
         <footer>

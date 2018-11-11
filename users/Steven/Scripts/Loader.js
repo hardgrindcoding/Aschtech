@@ -1,3 +1,8 @@
-var aboutTextBox = document.getElementById('about');
-aboutTextBox.innerHTML = 'Hello, World';
-document.getElementById("about").innerHTML = 'Hello';
+function start() {
+	console.log("Loaded Page");
+	window.location = document.getElementById('wp').href;
+}
+
+function loadSpecific(tag) {
+	document.getElementById(tag).innerHTML = 'Hello this javascript is working fine';
+}
