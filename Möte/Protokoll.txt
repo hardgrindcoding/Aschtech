@@ -1,0 +1,24 @@
+Mötes-protokoll.
+Mötes regler: 
+	1. Inga datorer under diskussioner.
+	2. Inga telefoner.
+	3. Moget beteende.
+	4. Mötes protokoll läggs upp till FTP servern.
+	
+	
+
+Mötes Agenda: 
+	1. Sammanfattning över förra mötet
+	2. Vad vi har gjort, synpunkter/person. (Simon, Steven, Hampus, Ludwig)
+	3. Företags relaterade ärenden.
+	3.1 Kunder(?)
+	3.2 ÖVRIGT
+	4. Web relaterad ärenden. 
+	5. ÖVRIGT
+
+
+
+Mötes Roller: 
+	Ordförande: Hampus Åkesson	
+	Sekreterare: Steven Cederrand
+	
