@@ -2,98 +2,54 @@
     <head>
         <title> Steven Cederrand </title>
         <link href="CSS/index.css" rel="stylesheet" type ="text/css"> </link>
-        <script type= "text/javascript" src="Scripts/Loader.js"></script>
+        <link rel="icon" href="Images/sc-logo.png"></link>
+        <script type= "text/javascript" src="Scripts/main.js"></script>
     </head>
 
     <body>
+      <!--
         <div id="Container">
-            <button id="BurgerMenu" type="button">&#9776</button><!-- Change the size of this -->
-            
+
             <div id="pagelinks">
                 <nav>
                     <li><a href="http://www.aschtech.se/"><button type="button">Aschtech</button></a></li>
-                    <!-- <li id="wp"><a href="#wallpaper"><button type="button">home</button></a></li>  -->
+                    <li id="wp"><a href="#wallpaper"><button type="button">home</button></a></li>
                     <li><a href="#about"><button type="button">who am I</button></a></li>
                     <li><a href="#howIwork"><button type="button">how I work</button></a></li>
-                    <li><a href="#portfolio"><button>portfolio</button></a></li> 
+                    <li><a href="#portfolio"><button>portfolio</button></a></li>
                     <li><a href="#photos"><button>photos</button></a></li>
                 </nav>
             </div>
 
         </div>
-
-        <!--Set the page navigator to be a fold down note-->
-        <!---
-        <div id="pagelinks">
-            <nav>
-                <li><a href="http://www.aschtech.se/"><button type="button">Aschtech</button></a></li>
-                <!-- <li id="wp"><a href="#wallpaper"><button type="button">home</button></a></li> 
-                <li><a href="#about"><button type="button">who am I</button></a></li>
-                <li><a href="#howIwork"><button type="button">how I work</button></a></li>
-                <li><a href="#portfolio"><button>portfolio</button></a></li> 
-                <li><a href="#photos"><button>photos</button></a></li>
-            </nav>
-        </div>
-        -->
+      -->
         <!-- Home Screen -->
         <div id="wallpaper">
             <div id="containerForWP">
                 <div id="logo">
                     <span>Steven Cederrand</span>
+                    <br>
+                    <br>
+                    <h1>PROGRAMMER/--/TEA ADDICT</h1>
+                    <br>
+                    <h2 id="aboutP1"> </h2>
+                    <br>
+                    <ul>
+                      <li>
+                        <button class="LButton">CONTACT</button>
+                        <a href="http://www.aschtech.se/"><button class="LButton">ASCHTECH</button></a>
+                        <button class="LButton">PORTFOLIO</button>
+                        <button class="LButton">R&#201;SUM&#201;</button>
+                      </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- About me -->
-        <div id="about" class="sText">
-            <h1>who am I</h1>
-            <p id="aboutP1">THis is some </p>
-        </div>
-
-        <!-- Insert som image here -->
-
-        <div id="wallpaper1">
-            <div id="containerForWP">
-                <div id="logo1">
-                    <span>how I work</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- How I work -->
-
-        <div id="howIwork" class="sText">
-            <h1>how I work</h1>
-            <p id="howP1">THis is some </p>
-        </div>
-
-        <!-- Insert som image here-->
-
-        <div id="portfolio" class="sText">
-            <h1>portfolio</h1>
-            <p id="PP1">THis is some </p>
-        </div>
-
-        <!-- Insert som image here-->
-        <div id="photos"class="sText">
-            <h1>photos</h1>
-            <p id="PP1">THis is some </p>
-        </div>
+        <script>unfade('logo');</script>
         <script>loadSpecific('aboutP1');</script>
         <script>loadSpecific('howP1');</script>
         <script>loadSpecific('PP1');</script>
-
-        <!-- Contact -->
-        <footer>
-            <nav>
-                <ul>
-                    <!--- On press then it'll open a new tab -->
-                    <li><a href="https://www.facebook.com/steven.cederrand" target='_blank'><img src="Images/FbBlk.png"/></a></li>
-                    <!---<li><a href="https://www.instagram.com/steven_cederrand/" target='_blank'><img src="Images/tempInsta.png"/></a></li> -->
-                    <li><a href="https://github.com/impwing" target='_blank'><img src="Images/githubLogo.png"/></a></li>
-                </ul>
-            </nav>
-        </footer>
-
+        <script>loadSpecific('phP1');</script>
     </body>
 </html>

@@ -81,19 +81,53 @@ body {
 }
 
 #logo {
+
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 70%;
     transform: translate(-50%,-50%);
 }
 
 #logo span{
-    background-color: #444444;
     font-family: 'future';
     color: white;
-    padding: 10px;
-    font-size: 24px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-decoration: underline;
 }
+#logo h1 {
+  font-family: 'future';
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+}
+#logo h2 {
+  font-family: 'future';
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+}
+
+#logo button {
+  background-color: Transparent;
+  color: white;
+
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 2px solid #ffff;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+}
+#logo button:hover {
+    background-color: White;
+    color: black;
+}
+
+
+
+
 
 #logo1 {
     position: absolute;

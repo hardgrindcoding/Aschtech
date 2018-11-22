@@ -1,8 +1,23 @@
 function loadSpecific(tag) {
-	document.getElementById(tag).innerHTML = 'Hello this javascript is working fine';
+	var text = "";
+	if(tag == 'aboutP1') {
+
+		text = "ENTHUSIASTIC PROBLEMSOLVER STUDYING COMPUTER SCIENCE AT BLEKINGE INSTITUTE OF TECHNOLOGY;";
+		document.getElementById(tag).innerHTML = text;
+
+	}
 }
 
-function toggleTopBar(ref) {
-	ref.classList.toggle('active');
-	document.getElementById('pagelinks').classList.toggle('active');
+function unfade(tag) {
+		var element = document.getElementById(tag);
+    var op = 0.01;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function() {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
 }
