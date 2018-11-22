@@ -25,7 +25,6 @@ body {
 /* ______ */
 /* Topbar */
 /* ______ */
-
 #pagelinks {
     background-color: #444444;
     position: static;
@@ -48,23 +47,9 @@ body {
     color: white;
     transition-duration: 0.3s;
 }
+
 #pagelinks nav li button:hover {
     background-color: #595959;
-}
-
-.topButton {
-    position: fixed;
-    top: 0;
-    left: 20px;
-    transition:top 200ms linear 0ms,transform 300ms ease 100ms;
-}
-.topButton span {
-    font-size: 50px;
-    color: #919191;
-}
-.topButton.active {
-    top: 230px;
-    transform:rotate(360deg);
 }
 
 
