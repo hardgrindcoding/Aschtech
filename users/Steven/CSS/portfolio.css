@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family: 'future';
+    src:url('../misc/FUTRFW.TTF') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+}
+
+
+#logo1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#logo1 span {
+    background-color: #444444;
+    font-family: 'future';
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
