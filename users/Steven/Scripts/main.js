@@ -1,5 +1,6 @@
 function loadSpecific(tag) {
 	var text = "";
+	//For the main page-
 	if(tag == 'aboutP1') {
 
 		text = "ENTHUSIASTIC PROBLEMSOLVER STUDYING COMPUTER SCIENCE AT BLEKINGE INSTITUTE OF TECHNOLOGY;";
