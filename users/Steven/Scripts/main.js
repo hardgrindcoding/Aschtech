@@ -3,7 +3,7 @@ function loadSpecific(tag) {
 	//For the main page-
 	if(tag == 'aboutP1') {
 
-		text = "ENTHUSIASTIC PROBLEMSOLVER STUDYING COMPUTER SCIENCE AT BLEKINGE INSTITUTE OF TECHNOLOGY;";
+		text = "ENTHUSIASTIC PROBLEM SOLVER STUDYING COMPUTER SCIENCE AT BLEKINGE INSTITUTE OF TECHNOLOGY;";
 		document.getElementById(tag).innerHTML = text;
 
 	}
