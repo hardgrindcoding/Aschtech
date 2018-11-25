@@ -7,60 +7,45 @@
     </head>
 
     <body>
-      <!--
-        <div id="Container">
-
-            <div id="pagelinks">
-                <nav>
-                    <li><a href="http://www.aschtech.se/"><button type="button">Aschtech</button></a></li>
-                    <li id="wp"><a href="#wallpaper"><button type="button">home</button></a></li>
-                    <li><a href="#about"><button type="button">who am I</button></a></li>
-                    <li><a href="#howIwork"><button type="button">how I work</button></a></li>
-                    <li><a href="#portfolio"><button>portfolio</button></a></li>
-                    <li><a href="#photos"><button>photos</button></a></li>
-                </nav>
-            </div>
-
-        </div>
-      -->
-        <!-- Home Screen -->
+          <!-- Home Screen -->
         <div id="wallpaper">
             <div id="containerForWP">
-                <div id="logo">
-                    <span>Steven Cederrand</span>
-                    <br>
-                    <br>
-                    <h1>PROGRAMMER/--/TEA ADDICT</h1>
-                    <br>
-                    <h2 id="aboutP1"> </h2>
-                    <br>
-                    <ul>
-                      <li>
-                        <button class="LButton">CONTACT</button>
-                        <a href="http://www.aschtech.se/"><button class="LButton">ASCHTECH</button></a>
-                        <a href="portfolio.html"><button class="LButton">PORTFOLIO</button></a>
-                        <button class="LButton">R&#201;SUM&#201;</button>
-                      </li>
-                    </ul>
-                </div>
+              <div id="overlay">
+                <main> <!-- STYLE THIS -->
+                    <div id="contactForm">
+                      <button id="contactClose" onclick="fade('overlay')">&#10539;</button>
+                      <form class="contact" action="Scripts/contact.php" method="post">
+                          <input type="text" name="name" placeholder="Full Name:"><br>
+                          <input type="text" name="email" placeholder="Your Email:"><br>
+                          <input type="text" name="Subject" placeholder="Subject:"><br>
+                          <textarea name="message" placeholder="message"></textarea><br>
+                          <button type="submit" name="submit">SEND EMAIL</button>
+                      </form>
+                    </div>
+                </main>
+              </div>
+              <div id="logo">
+                  <span>Steven Cederrand</span>
+                  <br>
+                  <br>
+                  <h1>PROGRAMMER/--/TEA ADDICT</h1>
+                  <br>
+                  <h2 id="aboutP1"> </h2>
+                  <br>
+                  <ul>
+                    <li>
+                      <button class="LButton" onclick="unfade('overlay')">CONTACT</button>
+                      <a href="https://www.aschtech.se/"><button class="LButton">ASCHTECH</button></a>
+                      <a href="portfolio"><button class="LButton">PORTFOLIO</button></a>
+                      <button class="LButton">R&#201;SUM&#201;</button>
+                    </li>
+                  </ul>
+              </div>
             </div>
         </div>
-        <main>
-            <div id="contactForm">
-                <p>Send Email</p>
-                <form class="contact" action="Scripts/contact.php" method="post">
-                    <input type="text" name="name" placeholder="Full Name:">
-                    <input type="text" name="email" placeholder="Your Email:">
-                    <input type="text" name="Subject" placeholder="Subject:">
-                    <textarea name="message" placeholder="message"></textarea>
-                    <button type="submit" name="submit">SEND EMAIL</button>
-                </form>
-            </div>
-        </main>
+
+        <script>fade('overlay');</script>
         <script>unfade('logo');</script>
         <script>loadSpecific('aboutP1');</script>
-        <script>loadSpecific('howP1');</script>
-        <script>loadSpecific('PP1');</script>
-        <script>loadSpecific('phP1');</script>
     </body>
 </html>
