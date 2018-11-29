@@ -8,22 +8,9 @@
 
     <body>
           <!-- Home Screen -->
+
         <div id="wallpaper">
             <div id="containerForWP">
-              <div id="overlay">
-                <main> <!-- STYLE THIS -->
-                    <div id="contactForm">
-                      <button id="contactClose" onclick="fade('overlay')">&#10539;</button>
-                      <form class="contact" action="Scripts/contact.php" method="post">
-                          <input type="text" name="name" placeholder="Full Name:"><br>
-                          <input type="text" name="email" placeholder="Your Email:"><br>
-                          <input type="text" name="Subject" placeholder="Subject:"><br>
-                          <textarea name="message" placeholder="message"></textarea><br>
-                          <button type="submit" name="submit">SEND EMAIL</button>
-                      </form>
-                    </div>
-                </main>
-              </div>
               <div id="logo">
                   <span>Steven Cederrand</span>
                   <br>
@@ -34,15 +21,30 @@
                   <br>
                   <ul>
                     <li>
-                      <button class="LButton" onclick="unfade('overlay')">CONTACT</button>
-                      <a href="https://www.aschtech.se/"><button class="LButton">ASCHTECH</button></a>
-                      <a href="portfolio"><button class="LButton">PORTFOLIO</button></a>
-                      <button class="LButton">R&#201;SUM&#201;</button>
+                      <button class="LButton" onclick="unfade('overlay'); logoBlur()">CONTACT</button> <!-- CONTACT -->
+                      <a href="https://www.aschtech.se/"><button class="LButton">ASCHTECH</button></a> <!-- ASCHTECH -->
+                      <a href="portfolio"><button class="LButton">PORTFOLIO</button></a> <!-- PORTFOLIO -->
+                      <button class="LButton">R&#201;SUM&#201;</button> <!-- RESUME -->
                     </li>
                   </ul>
               </div>
             </div>
         </div>
+        <div id="overlay">
+          <main> <!-- STYLE THIS -->
+              <div id="contactForm">
+                <button id="contactClose" onclick="fade('overlay'); logoUnBlur()">&#10539;</button>
+                <form class="contact" action="Scripts/contact.php" method="post">
+                    <input type="text" name="name" placeholder="Full Name:"><br>
+                    <input type="text" name="email" placeholder="Your Email:"><br>
+                    <input type="text" name="Subject" placeholder="Subject:"><br>
+                    <textarea name="message" placeholder="message"></textarea><br>
+                    <button type="submit" name="submit">SEND EMAIL</button>
+                </form>
+              </div>
+          </main>
+        </div>
+
 
         <script>fade('overlay');</script>
         <script>unfade('logo');</script>
