@@ -1,0 +1,140 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Open-sans", sans-serif;}
+html, body {
+    height: 100%;
+    width: 100;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    display: inline-block;
+    float: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #708090;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/*Positioning*/
+
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.display-middle {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+
+/*Size changes*/
+
+.padding-64 {
+    padding-top:64px!important;
+    padding-bottom:64px!important
+}
+
+.padding-large {
+    padding:12px 24px!important;
+}
+
+.xlarge {
+    font-size:24px;
+}
+
+.wide {
+    letter-spacing: 4px;
+}
+
+/*Random*/
+
+.navBar {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    max-width: 390px;
+    height: -250px;
+}
+
+.rcorners {
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.container {
+    padding:0.01em 16px
+}
+
+.display-container {
+    position: relative;
+}
+
+.content {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px
+}
+
+/*Animations*/
+
+.animate-opacity {
+    animation:opac 0.8s
+}
+
+.opacity-min {
+    opacity:0.75
+}
+
+@keyframes opac {
+    from{opacity:0} to{opacity:1}
+}
+
+/*Images*/
+
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("back.jpg");
+    min-height: 100%;
+
+}
+
+/*Colors*/
+
+.light-grey {
+    color:#D3D3D3!important;
+}
+
+.black {
+    color:#fff!important;
+    background-color:#000!important;
+}
