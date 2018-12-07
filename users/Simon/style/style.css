@@ -22,18 +22,6 @@ li {
     float: none;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #708090;
-}
-
 .active {
     background-color: #4CAF50;
 }
@@ -62,6 +50,15 @@ li a:hover:not(.active) {
 .down {
     top: 60px;
     color: #FFF
+}
+
+.left {
+    text-align: left!important;
+}
+
+.right {
+    text-align: right!important;
+    float: right;
 }
 
 /*Size changes*/
@@ -93,8 +90,67 @@ li a:hover:not(.active) {
     background-color: #333;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    max-width: 410px;
+    max-width: 403px;
     height: -250px;
+}
+
+.navButton {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navButton:hover:not(.active) {
+    background-color: #708090;
+}
+
+.cvBar {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    max-width: 108px;
+    height: -250px;
+}
+
+.button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.button:hover:not(.active) {
+    background-color: #708090;
+}
+
+.portfolioSearch {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    border-radius: 400px;
+    max-width: 150px;
+    height: -250px;
+}
+
+.portButton {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    max-width: 40px;
+    max-height: 20px;
+    text-decoration: none;
+}
+
+.portButton:hover:not(.active) {
+    background-color: #708090;
 }
 
 .rcorners {
@@ -116,6 +172,10 @@ li a:hover:not(.active) {
     margin-left:auto;
     margin-right:auto;
     max-width:980px
+}
+
+.f-left {
+    float: left;
 }
 
 /*Animations*/
