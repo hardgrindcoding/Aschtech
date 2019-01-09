@@ -1,3 +1,21 @@
+
+function setupKey() {
+	var overlay = document.getElementById('overlay');
+	if(overlay) {
+		document.body.addEventListener("keypress", onKeyPress);
+		console.log("Setup");
+	}
+	if(!overlay) {
+		console.log("NULL");
+	}
+}
+
+function onKeyPress(key) {
+	if(key == "Escape") {
+		console.log("Escape");
+	}
+}
+
 function loadSpecific(tag) {
 	var text = "";
 	//For the main page-
@@ -10,7 +28,7 @@ function loadSpecific(tag) {
 }
 
 function unfade(tag) {
-	
+
 		var element = document.getElementById(tag);
 
 		if(element.style.display == "none") {
@@ -48,13 +66,12 @@ function fade(tag) {
 
 function logoBlur() {
 	var mainBackground = document.getElementById('wallpaper');
-	mainBackground.style.filter = "blur(8px)";
-	mainBackground.style.webkitFilter = "blur(8px)";
+	mainBackground.style.filter = "brightness(0.1)";
+	mainBackground.style.webkitFilter = "brightness(0.1)";
 }
 
 function logoUnBlur() {
-	console.log("Something");
 	var mainBackground = document.getElementById('wallpaper');
-	mainBackground.style.filter = "blur(0px)";
-	mainBackground.style.webkitFilter = "blur(0px)";
+	mainBackground.style.filter = "brightness(1)";
+	mainBackground.style.webkitFilter = "brightness(1)";
 }
