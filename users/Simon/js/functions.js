@@ -29,3 +29,7 @@ function toggleFunction() {
         x.className = x.className.replace(" show", "");
     }
 };
+
+function picture(){
+    var pic = "../style/cat.jpg"
+}

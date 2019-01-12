@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6,p {
+body,h1,h2,h3,h4,h5,h6,p,label {
     font-family: "Open Sans";
 }
 
@@ -24,6 +24,18 @@ li {
 
 a {
     color:inherit
+}
+
+form {
+    width:100%;
+    height:450px;
+    margin:auto;
+    position:relative;
+}
+
+input {
+    width:100%;
+    height: 25px;
 }
 
 .active {
@@ -52,8 +64,7 @@ a {
 }
 
 .down {
-    top: 60px;
-    color: #FFF
+    line-height: 500px;
 }
 
 .left {
@@ -94,6 +105,12 @@ a {
     letter-spacing: 4px;
 }
 
+.section {
+    margin-top:16px!important;
+    margin-bottom:16px!important;
+}
+
+
 /*Random*/
 
 .navBar {
@@ -126,7 +143,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     background-color: #333;
-    max-width: 108px;
+    max-width: 104px;
     height: -250px;
 }
 
@@ -192,6 +209,10 @@ a {
     float: left;
 }
 
+.f-right {
+    float: right;
+}
+
 .modal {
     z-index:3;
     display:none;
@@ -217,6 +238,20 @@ a {
 
 .transparent {
     background-color: transparent!important;
+}
+
+.input {
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:35%
+}
+
+.emailWindow {
+    position: relative;
+    right: -25px;
+    top: -44px;
 }
 
 /*Animations*/
@@ -253,7 +288,20 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("back.jpg");
+    min-height: 50%;
+}
+
+.bgimg-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("back.jpg");
     min-height: 100%;
+}
+
+.bgimg-3 {
+    background-color:#e6e6e6;
 }
 
 .image {
@@ -266,6 +314,14 @@ img {
 }
 
 /*Colors*/
+
+.lighter-grey-background {
+   background-color:#e6e6e6!important;
+}
+
+.lighter-grey {
+    color:##e6e6e6!important;
+}
 
 .light-grey {
     color:#D3D3D3!important;
