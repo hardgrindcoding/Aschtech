@@ -110,6 +110,11 @@ input {
     margin-bottom:16px!important;
 }
 
+.titleSize {
+    margin-top: 64px!important;
+    margin-bottom: 16px!important;
+}
+
 
 /*Random*/
 
@@ -192,7 +197,15 @@ input {
 }
 
 .container {
-    padding:0.01em 16px
+    padding:0.01em 16px;
+    margin-top:16px;
+    margin-bottom:16px
+}
+
+.container:after,.container:before {
+    content:"";
+    display:table;
+    clear:both
 }
 
 .display-container {
@@ -276,6 +289,12 @@ input {
 
 .messageButton:hover:not(.active) {
     background-color: #a6a6a6;
+}
+
+.cvPb {
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 40px;
 }
 
 /*Animations*/
