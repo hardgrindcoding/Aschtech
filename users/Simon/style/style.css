@@ -254,6 +254,30 @@ input {
     top: -44px;
 }
 
+.messageBox {
+    padding: 8px;
+    display:block;
+    border:none;
+    width:35%;
+    resize: vertical;
+}
+
+.messageButton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 6px 16px;
+    width: 120px;
+    margin: 5px;
+}
+
+.messageButton:hover:not(.active) {
+    background-color: #a6a6a6;
+}
+
 /*Animations*/
 
 .animate-opacity {
