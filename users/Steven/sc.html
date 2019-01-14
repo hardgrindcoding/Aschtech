@@ -22,7 +22,8 @@
                   <ul>
                     <li>
                       <a href="https://www.aschtech.se/"><button class="LButton">ASCHTECH</button></a> <!-- ASCHTECH -->
-                      <button class="LButton">R&#201;SUM&#201;</button> <!-- RESUME -->
+                      <button class="LButton" onclick="unfade('description'); logoBlur()">PROJECTS</button>
+                      <!--<button class="LButton" onclick="unfade('description'); logoBlur()">R&#201;SUM&#201;</button>--> <!-- RESUME -->
                       <a href="https://github.com/Impwing"><button class="LButton">GITHUB</button></a> <!-- PORTFOLIO -->
                       <button class="LButton" onclick="unfade('overlay'); logoBlur()">CONTACT</button> <!-- CONTACT -->
                     </li>
@@ -30,10 +31,10 @@
               </div>
             </div>
         </div>
-        <div id="overlay">
+        <div class="Overlay" id="overlay">
           <main> <!-- STYLE THIS -->
               <div id="contactForm">
-                <button id="contactClose" onclick="fade('overlay'); logoUnBlur()">&#10539;</button>
+                <button onclick="fade('overlay'); logoUnBlur()">&#10539;</button>
                 <form class="contact" action="Scripts/contact.php" method="post">
                     <input type="text" name="name" placeholder="Full Name:"><br>
                     <input type="text" name="email" placeholder="Your Email:"><br>
@@ -45,13 +46,21 @@
           </main>
         </div>
 
+        <div class="Overlay" id="description">
+          <button onclick="fade('description'); logoUnBlur()">&#10539;</button>
+          <div id="contactForm">
+            <!-- Close the windows -->
+
+            <!-- Proper description -->
+            <h1>PROJECTS</h1>
+            <p>insert project description</p>
+          </div>
+        </div>
+
 
         <script>fade('overlay');</script>
         <script>unfade('logo');</script>
         <script>loadSpecific('aboutP1');</script>
+        <script>fade('description');</script>
     </body>
 </html>
-<!---
-<script>setupKey();</script>
-<button id="contactClose" onclick="fade('overlay'); logoUnBlur()">&#10539;</button>
--->

@@ -19,42 +19,31 @@
 }
 
 
+/* GENERAL LAYOUT */
 body {
     align-items: center;
 
 }
+button {
+  background-color: Transparent;
+  color: white;
 
-
-#wallpaper {
-    background-image: url('../Images/Night2.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    max-height: 100%;
-    transform: scale(1);
-
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 2px solid #ffff;
+  transition-duration: 0.4s;
+  margin-right: 10px;
 }
-
-#containerForWP {
-    position: relative;
-    height: 100%;
+button:hover {
+  background-color: White;
+  color: black;
 }
-
-#overlay {
-  position: absolute;
-  top: 25%;
-  left: 40%;
-  width: 400px;
-  opacity: 1;
+h1 {
+  font-family: 'future';
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
-
-.contact {
-  width: 400px;
-  margin: 10px 0px;
-}
-
 input {
   width: 100%;
   margin: 10px 0px;
@@ -70,7 +59,6 @@ input {
   font-size: 15px;
   letter-spacing: 0px;
 }
-
 textarea {
   font-family: 'future';
   font-size: 10px;
@@ -87,6 +75,59 @@ textarea {
   border-radius: 4px;
 }
 
+p {
+  font-size: 15px;
+  font-family: 'future';
+  color: white;
+
+}
+#wallpaper {
+    background-image: url('../Images/Night2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1);
+
+}
+
+#containerForWP {
+    position: relative;
+    height: 100%;
+}
+.Overlay {
+  position: absolute;
+  top: 23%;
+  left: 30%;
+  width: 400px;
+  opacity: 1;
+}
+
+#description {
+  position: absolute;
+  opacity: 1;
+  width: 500px;
+}
+
+.contact {
+  width: 400px;
+  margin: 10px 0px;
+}
+
+#contactForm h1 {
+  margin: 10px 35px;
+  font-size: 40px;
+
+}
+#contactForm p {
+  font-size: 14px;
+  margin: 10px 33px;
+}
+
+
+
 #logo {
     position: absolute;
     top: 30%;
@@ -102,12 +143,6 @@ textarea {
     text-decoration: underline;
 }
 
-#logo h1 {
-  font-family: 'future';
-  color: white;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
 
 #logo h2 {
   font-family: 'future';
@@ -117,22 +152,7 @@ textarea {
 
 }
 
-/* GENERAL BUTTON LAYOUT */
-button {
-  background-color: Transparent;
-  color: white;
 
-  padding: 10px 10px;
-  border-radius: 5px;
-  border: 2px solid #ffff;
-  transition-duration: 0.4s;
-  margin-right: 10px;
-}
-
-button:hover {
-  background-color: White;
-  color: black;
-}
 
 #logo1 {
     position: absolute;
@@ -147,24 +167,3 @@ button:hover {
     padding: 10px;
     font-size: 24px;
 }
-
-
-
-
-/*
-#logo button {
-  background-color: Transparent;
-  color: white;
-
-  padding: 10px 10px;
-  border-radius: 5px;
-  border: 2px solid #ffff;
-  transition-duration: 0.4s;
-  margin-right: 10px;
-}
-
-#logo button:hover {
-    background-color: White;
-    color: black;
-}
-*/
