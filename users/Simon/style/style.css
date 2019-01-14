@@ -115,6 +115,9 @@ input {
     margin-bottom: 16px!important;
 }
 
+.xtraPadding {
+    padding-bottom: 124px!important;
+}
 
 /*Random*/
 
@@ -143,9 +146,10 @@ input {
 }
 
 .cvBar {
+    position: inherit;
     list-style-type: none;
     overflow: hidden;
-    margin-left: auto;
+    margin-left: 80px;
     margin-right: auto;
     background-color: #333;
     max-width: 104px;
@@ -165,14 +169,15 @@ input {
 }
 
 .portfolioSearch {
+    width: 50%;
+    z-index: 1;
     list-style-type: none;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     background-color: #333;
-    border-radius: 400px;
-    max-width: 150px;
     height: -250px;
+    max-width: 150px;
 }
 
 .portButton {
@@ -189,11 +194,21 @@ input {
     background-color: #708090;
 }
 
+.portfolioXtraPadding {
+    padding-bottom: 26px!important;
+}
+
 .rcorners {
     border-radius: 8px;
     padding: 20px;
     width: 200px;
     height: 150px;
+}
+
+.border {
+    border: 4px;
+    border-style: solid;
+    color: black;
 }
 
 .container {
@@ -293,8 +308,16 @@ input {
 
 .cvPb {
     position: absolute;
-    margin-top: 410px;
-    margin-left: 40px;
+    margin-top: 390px;
+    margin-left: 30px;
+}
+
+.hidden {
+    display:none;
+}
+
+.unhidden {
+    display:block;
 }
 
 /*Animations*/
@@ -363,7 +386,7 @@ img {
 }
 
 .lighter-grey {
-    color:##e6e6e6!important;
+    color:#e6e6e6!important;
 }
 
 .light-grey {
