@@ -32,7 +32,7 @@ button {
   border-radius: 5px;
   border: 2px solid #ffff;
   transition-duration: 0.4s;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 button:hover {
   background-color: White;
