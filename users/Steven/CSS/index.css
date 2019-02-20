@@ -79,8 +79,8 @@ p {
   font-size: 15px;
   font-family: 'future';
   color: white;
-
 }
+
 #wallpaper {
     background-image: url('../Images/Night2.jpg');
     background-attachment: fixed;
@@ -126,7 +126,16 @@ p {
   margin: 10px 33px;
 }
 
-
+.Cvpic {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+#cvpic {
+  width: 600px;
+  height: auto;
+  
+}
 
 #logo {
     position: absolute;

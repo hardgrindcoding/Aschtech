@@ -26,7 +26,7 @@
                       <!--<button class="LButton" onclick="unfade('description'); logoBlur()">R&#201;SUM&#201;</button>--> <!-- RESUME -->
                       <a href="https://github.com/Impwing"><button class="LButton">GITHUB</button></a> <!-- PORTFOLIO -->
                       <button class="LButton" onclick="unfade('overlay'); logoBlur()">CONTACT</button> <!-- CONTACT -->
-                      <button class="LButton">CV</button>
+                      <button class="LButton" onclick="unfade('cv'); logoBlur()">CV</button>
                     </li>
                   </ul>
               </div>
@@ -46,7 +46,10 @@
               </div>
           </main>
         </div>
-
+        <div class="Cvpic" id="cv">
+          <button onclick="fade('cv'); logoUnBlur()">&#10539;</button> 
+          <img id="cvpic" src="Images/CV.png">
+        </div>
         <div class="Overlay" id="description">
           <button onclick="fade('description'); logoUnBlur()">&#10539;</button>
           <div id="contactForm">
@@ -60,6 +63,7 @@
 
 
         <script>fade('overlay');</script>
+        <script>fade('cv');</script>
         <script>unfade('logo');</script>
         <script>loadSpecific('aboutP1');</script>
         <script>fade('description');</script>
